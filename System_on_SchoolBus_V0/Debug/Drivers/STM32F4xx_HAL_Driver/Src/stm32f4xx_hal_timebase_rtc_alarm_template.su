@@ -1,0 +1,5 @@
+stm32f4xx_hal_timebase_rtc_alarm_template.c:95:19:HAL_InitTick	96	static
+stm32f4xx_hal_timebase_rtc_alarm_template.c:239:6:HAL_SuspendTick	4	static
+stm32f4xx_hal_timebase_rtc_alarm_template.c:254:6:HAL_ResumeTick	4	static
+stm32f4xx_hal_timebase_rtc_alarm_template.c:272:6:HAL_RTC_AlarmAEventCallback	24	static
+stm32f4xx_hal_timebase_rtc_alarm_template.c:304:6:RTC_Alarm_IRQHandler	8	static

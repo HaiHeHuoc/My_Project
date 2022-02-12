@@ -1,0 +1,15 @@
+MCU:stm32f411ceu6
+Module: 
+GPS: GTU7
+GSM: GA6
+RFID: RC522
+Đọc vị trí từ GTU7, tách thông tin và lưu vào biến trong struct GPS_t. (GPS.h)
+Khi RC522 đọc phát hiện và trả mã thẻ về MCU. MCU kiểm tra mã thẻ trong danh sách (TEST.h)
+Nếu có, Nhắn tin cho cha mẹ: học sinh đã lên xe ,thông tin về vị trí đã lên/xuống xe và thời gian hệ thống đã hoạt động.
+Khi học sinh lên quá 2 phút mà chưa xuống xe, gọi cho cha mẹ học sinh 2p/lần cho tới khi học sinh xuống xe hoặc hệ thống bị reset 
+  
+
+Read the location from GTU7, extract the information and store it in a variable in struct GPS_t. (GPS.h)
+When RC522 reads, detects and returns the tag code to the MCU. MCU checks the card code in the list (TEST.h)
+If yes, Message parents: student has boarded the bus, information about the location of the boarding / exiting and the time the system has been active.
+When a student gets on for more than 2 minutes without getting off the bus, call the student's parents every 2 minutes until the student gets off the bus or the system is reset.
